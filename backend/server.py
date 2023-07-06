@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
+
 import torch
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
 app = Flask(__name__)
+#should add cors in production
+CORS(app)
 
 # Load the AI model and tokenizer
 model_path = 'psmathur/orca_mini_3b'

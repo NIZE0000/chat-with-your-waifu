@@ -1,6 +1,8 @@
 torch 
 torchvision 
 torchaudio
-transformer
+transformers
 accelerate
 sentencepiece
+flask-cors
+Flask

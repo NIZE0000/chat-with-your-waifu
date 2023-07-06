@@ -1,16 +1,15 @@
-FROM continuumio/anaconda
+FROM python:3.9-slim-buster
 
 WORKDIR /server
 
 COPY requirements.txt .
 
-COPY . server
-
 RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 EXPOSE 5000
 
-ENV FLASK_APP=server.py
+ENV PYTHONUNBUFFERED=1
 
-# Start the Flask application
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["python", "server.py"]
