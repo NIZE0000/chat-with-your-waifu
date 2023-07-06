@@ -11,6 +11,7 @@ model = LlamaForCausalLM.from_pretrained(model_path, torch_dtype=torch.float16, 
 
 # Generate text based on the input
 def generate_text(system, instruction, input=None):
+    
     if input:
         prompt = f"### System:\n{system}\n\n### User:\n{instruction}\n\n### Input:\n{input}\n\n### Response:\n"
     else:

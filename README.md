@@ -10,8 +10,8 @@ Backend
 
 minimum require:
 
-    RAM: 24GB
-
-    VRAM: 8GB
-    
-    GPU: Nvidia
+  RAM: 24GB
+  
+  VRAM: 8GB
+  
+  GPU: Nvidia
