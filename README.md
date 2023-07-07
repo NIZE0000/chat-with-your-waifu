@@ -1,6 +1,6 @@
 # Chat with Your Waifu
 
-This repository contains an AI chat bot that simulates a conversation with a virtual waifu. It is based on the Orca mini fine-tune from LLaMa model.
+This repository contains an AI chat bot that simulates a conversation with a virtual waifu. It is based on the Orca mini fine-tune or LLaMa model.
 
 ## Preview
 <div align="center">
